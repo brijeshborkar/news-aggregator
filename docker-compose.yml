@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  news-aggregator:
+    container_name: news-aggregator
+    image: brijeshdoc/news-aggregator:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true

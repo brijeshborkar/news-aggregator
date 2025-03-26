@@ -1,11 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import NewsAggregator from "./components/NewsAggregator";
+import { Grid } from "@mui/system";
 
 function App() {
   return (
-    <div className="App">
-     news aggregator
+    <div className="app">
+      <NewsAggregator />
     </div>
   );
 }
