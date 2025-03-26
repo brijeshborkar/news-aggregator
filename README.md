@@ -38,3 +38,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### 6.(optional) If you dont have docker compose then u can run the manual image build
 
 `docker run -d -p 8080:80 brijeshdoc/news-aggregator:latest`
+
+### Open your browser and visit
+
+`http://localhost:8080`
