@@ -1,0 +1,25 @@
+node_modules
+npm-debug.log
+
+# Ignore build outputs (we'll build inside the container)
+dist
+build
+
+
+# Ignore local environment files (store secrets safely)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore Docker-related files (except Dockerfile)
+.dockerignore
+Dockerfile
+ Ignore logs
+logs
+*.log
+
+# Ignore Git-related files
+.git
+.gitignore
